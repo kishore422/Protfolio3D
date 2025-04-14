@@ -5,22 +5,22 @@ const LanguagesSection = ({ onClose }) => {
     {
       name: "English",
       proficiency: "Native/Fluent",
-      certifications: "IELTS 8.5"
+      certifications: "IELTS 7.0"
     },
     {
       name: "Spanish",
-      proficiency: "Advanced (C1)",
+      proficiency: "Intermediate (C1)",
       certifications: "DELE C1"
     },
     {
       name: "French",
-      proficiency: "Intermediate (B1)",
+      proficiency: "Learning (B1)",
       certifications: "DELF B1"
     },
     {
-      name: "German",
-      proficiency: "Basic (A2)",
-      certifications: "Goethe-Zertifikat A2"
+      name: "Hindi",
+      proficiency: "Native/Fluent",
+      certifications: "Rashtrabhasha"
     }
   ];
   

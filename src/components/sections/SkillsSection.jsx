@@ -3,46 +3,45 @@ import React from 'react';
 const SkillsSection = ({ onClose }) => {
   const technicalSkills = {
     'Programming & Core': [
-      { name: 'JavaScript', level: 90 }, { name: 'Python', level: 80 },
-      { name: 'C', level: 75 }, { name: 'C++', level: 75 }, { name: 'Java', level: 80 },
-      { name: 'TypeScript', level: 80 }, { name: 'Git', level: 85 }, { name: 'GitLab', level: 80 },
-      { name: 'Shell Scripting', level: 70 }, { name: 'Powershell', level: 65 }
+      { name: 'Python', level: 80 },
+      { name: 'C', level: 75 }, { name: 'C++', level: 75 }, { name: 'Java', level: 80 },{ name: 'UI/UX Design ', level: 90 }, 
+      { name: 'JavaScript/TypeScript', level: 80 }, { name: 'Git/GitLab', level: 85 }, { name: 'Unit Testing', level: 80 },
+      { name: 'Shell/Powershell', level: 70 }, { name: 'TCP/IP, HTTP, WebSockets', level: 65 }, { name: 'DSA/OOP', level: 85 }, { name: 'Linux/Unix', level: 70 }
     ],
     'Web & Full-Stack': [
-      { name: 'React', level: 85 }, { name: 'Node.js', level: 80 }, { name: 'HTML5', level: 95 }, { name: 'CSS', level: 90 },
-      { name: 'Bootstrap', level: 85 }, { name: 'TailwindCSS', level: 80 }, { name: 'Vue.js', level: 75 }, { name: 'Next.js', level: 80 },
-      { name: 'Django', level: 75 }, { name: 'Flask', level: 70 }, { name: '.NET', level: 75 }, { name: 'Spring Boot', level: 75 },
-      { name: 'FastAPI', level: 70 }, { name: 'PHP', level: 70 }, { name: 'OAuth2', level: 80 }, { name: 'JWT Authentication', level: 80 },
-      { name: 'GraphQL', level: 70 }, { name: 'REST APIs', level: 90 }, { name: 'Serverless (Lambda, Cloud Functions)', level: 75 }
+      { name: 'React', level: 85 }, { name: 'Node.js', level: 80 }, { name: 'HTML5', level: 95 }, { name: 'CSS/TailwindCSS', level: 90 },
+      { name: 'Bootstrap', level: 85 }, { name: 'Vue.js/Next.js', level: 75 },
+      { name: 'Django', level: 75 }, { name: 'Flask', level: 70 }, { name: '.NET/Spring Boot', level: 75 }, { name: 'FastAPI/PHP', level: 80 },
+      { name: 'GraphQL/REST APIs', level: 80 }, { name: 'Serverless (Lambda, Cloud Functions)', level: 75 }
     ],
     'Cloud, DevOps & Infra': [
-      'AWS', 'Azure AKS', 'Azure Data Factory', 'Kubernetes', 'Docker', 'CI/CD Pipelines',
+      'AWS', 'Azure AKS', 'Kubernetes', 'Docker', 'CI/CD Pipelines',
       'Jenkins', 'Terraform', 'Prometheus', 'Grafana', 'ELK Stack', 'Project Management',
-      'DevOps', 'Automation', 'Scrum'
+      'DevOps', 'Azure Data Factory', 'Automation', 'Scrum'
     ],
     'AI/ML, Data & Embedded': [
-      'Machine Learning', 'Deep Learning', 'TensorFlow/Keras', 'PyTorch', 'Scikit-learn',
-      'NLP (OpenAI, LangChain)', 'Hugging Face', 'MLflow', 'Vector DBs (Pinecone, FAISS)',
-      'Apache Spark / PySpark', 'Hadoop (HDFS, Hive, Pig...)', 'MySQL', 'PostgreSQL', 'MongoDB',
-      'Oracle', 'SQLite3', 'Redis', 'Data Analysis', 'Data Visualization (Tableau, Power BI...)',
-      'Embedded C'
+      'Machine Learning', 'Deep Learning','NLP (OpenAI, LangChain)', 'Apache Spark / PySpark',  'Hadoop (HDFS, Hive, Pig...)', 'Data Visualization', 'Vector DBs (Pinecone, FAISS)','TensorFlow/Keras', 'PyTorch', 'Scikit-learn',
+      'Hugging Face', 'MLflow',
+       'MySQL', 'PostgreSQL', 'MongoDB',
+      'Oracle', 'SQLite3', 'Data Analysis','Tableau', 'Power BI','Embedded C', 
+      
     ]
   };
 
   const learningSkills = [
-    'gRPC', 'Istio', 'LangChain', 'Vector Databases', 'MLflow', 'Playwright', 'Figma', 'Vite',
-    'Chaos Engineering', 'Keras', 'Neural Network Design', 'CNN', 'RNNs', 'Data Wrangling',
-    'Data Preprocessing', 'OAuth2', 'Unit Testing', 'Integration Testing', 'SSL/TLS Encryption',
-    'UI/UX Validation', 'SSIS', 'OpenTelemetry', 'NumPy', 'Dask', 'Postman', 'Cucumber', 'PyTest',
-    'TestNG', 'Test Automation', 'MATLAB', 'Embedded Linux', 'HIL / MIL / SIL Testing', 'Snowflake',
+    'gRPC', 'Istio', 'LangChain',  'MLflow', 'Playwright', 'Figma', 'Vite','Keras',
+     'CNN', 'RNNs', 'Data Wrangling','UI/UX Validation',
+     'OAuth2', 'Unit Testing', 'Data Preprocessing','Integration Testing', 'SSL/TLS Encryption', 'Vector Databases','Chaos Engineering', 'HIL / MIL / SIL Testing', 'Neural Network Design',
+     'SSIS', 'OpenTelemetry', 'NumPy', 'Dask', 'Postman', 'Cucumber', 'PyTest',
+    'TestNG', 'Test Automation', 'MATLAB', 'Embedded Linux',  'Snowflake',
     'FastAPI', 'TailwindCSS', 'React Native', 'Three.js', 'Redux Toolkit', 'Zustand', 'Storybook',
     'Framer Motion', 'Google BigQuery', 'WebSockets', 'WebRTC', 'Power BI', 'Simulink', 'Pandas',
     'Data Mining', 'Azure AKS'
   ];
 
   const softSkills = [
-    'Problem Solving', 'Team Collaboration', 'Communication', 'Project Management',
-    'Adaptability', 'Creativity', 'Critical Thinking', 'Time Management'
+    'Problem Solving', 'Team Collaboration', 'Creativity & Communication', 'Project Management',
+    'Adaptability', 'Critical Thinking', 'Time Management'
   ];
 
   return (
