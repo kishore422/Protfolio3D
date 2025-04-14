@@ -44,9 +44,7 @@ const ContactSection = ({ onClose }) => {
       
 
 
-      {/* <div className="contact-item">
-            <a href="/resume.pdf" className="resume-button" download>Download Resume</a>
-          </div> */}
+      
 
 
       <div className="contact-container">
@@ -71,12 +69,15 @@ const ContactSection = ({ onClose }) => {
           </div>
 
           <div className="contact-item">
-            <h3>Social</h3>
+            <h3>Social </h3>
             <div className="social-icons">
               <a href="https://www.linkedin.com/in/saikishorebsk/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
               <a href="https://github.com/kishore422" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
               <a href="https://leetcode.com/u/Kishore622/" target="_blank" rel="noopener noreferrer"><SiLeetcode /></a>
             </div>
+            <div className="contact-item">
+            <a href="/resume.pdf" className="resume-button" download>Download Resume</a>
+          </div>
           </div>
 
 
@@ -118,6 +119,7 @@ const ContactSection = ({ onClose }) => {
               </div>
 
               <button type="submit" className="submit-button">Send Message</button>
+              
             </form>
           )}
         </div>
